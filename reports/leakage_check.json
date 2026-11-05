@@ -1,0 +1,5 @@
+{
+  "roc_auc_without_customer_rating": 0.7950730535134147,
+  "roc_auc_with_customer_rating": 0.9073141610390018,
+  "difference": 0.11224110752558702
+}

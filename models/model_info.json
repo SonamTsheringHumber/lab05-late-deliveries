@@ -1,0 +1,83 @@
+{
+  "model": "logistic_regression",
+  "scikit_learn_version": "1.9.1",
+  "seed": 42,
+  "data_seed": 7,
+  "threshold": 0.3,
+  "threshold_grid": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "numeric_features": [
+    "distance_km",
+    "items",
+    "hour",
+    "prep_minutes",
+    "courier_months"
+  ],
+  "categorical_features": [
+    "weather",
+    "day_type",
+    "vehicle"
+  ],
+  "excluded_columns": {
+    "order_id": "an identifier with no meaning; a flexible model could memorise it",
+    "customer_rating": "given after delivery, so unknown at order time (leakage)",
+    "late": "the target itself"
+  },
+  "best_settings": {
+    "model__C": 100,
+    "model__class_weight": null
+  },
+  "tuning": {
+    "scoring": "roc_auc",
+    "n_combinations": 10,
+    "best_params": {
+      "model__C": 100,
+      "model__class_weight": null
+    },
+    "best_cv_roc_auc": 0.7952458131653412,
+    "best_cv_roc_auc_std": 0.03425184998546771,
+    "untuned_cv_roc_auc": 0.7950730535134147,
+    "untuned_cv_roc_auc_std": 0.03423283037202363,
+    "gain_over_untuned": 0.00017275965192642406,
+    "gain_larger_than_fold_spread": false
+  },
+  "test_results": {
+    "threshold": 0.3,
+    "confusion_matrix": {
+      "true_negative": 578,
+      "false_positive": 55,
+      "false_negative": 64,
+      "true_positive": 53
+    },
+    "precision": 0.49074074074074076,
+    "recall": 0.452991452991453,
+    "f1": 0.4711111111111111,
+    "roc_auc": 0.7962760427215405,
+    "policy_costs": {
+      "flag_nobody": 1755,
+      "flag_everybody": 3000,
+      "model": 1392
+    },
+    "n_test_orders": 750,
+    "n_late_in_test": 117
+  }
+}

@@ -1,0 +1,6 @@
+model,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,f1_mean,f1_std,roc_auc_mean,roc_auc_std,cv_best_threshold,cv_best_cost
+dummy_baseline,0.844,0.0009,0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.0,0.2,5265
+logistic_regression,0.8622,0.0085,0.6541,0.0653,0.242,0.0526,0.3516,0.0644,0.7951,0.0342,0.3,4031
+logistic_regression_balanced,0.7369,0.0187,0.3328,0.0267,0.6809,0.0493,0.4469,0.0337,0.7947,0.0338,0.7,4098
+random_forest,0.8591,0.0076,0.736,0.1208,0.148,0.0363,0.2458,0.0558,0.7864,0.0369,0.25,4199
+gradient_boosting,0.8613,0.0065,0.635,0.05,0.2649,0.0243,0.3732,0.0291,0.7883,0.0308,0.3,4152

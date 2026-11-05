@@ -1,0 +1,20 @@
+{
+  "threshold": 0.3,
+  "confusion_matrix": {
+    "true_negative": 578,
+    "false_positive": 55,
+    "false_negative": 64,
+    "true_positive": 53
+  },
+  "precision": 0.49074074074074076,
+  "recall": 0.452991452991453,
+  "f1": 0.4711111111111111,
+  "roc_auc": 0.7962760427215405,
+  "policy_costs": {
+    "flag_nobody": 1755,
+    "flag_everybody": 3000,
+    "model": 1392
+  },
+  "n_test_orders": 750,
+  "n_late_in_test": 117
+}
